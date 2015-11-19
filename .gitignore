@@ -23,7 +23,7 @@ dev/
 docs/
 TODO
 t/*
-!t/sysinfos.public/
+!t/sysinfos/sysinfos.public
 !t/*.t
 !t/perlcriticrc
 !t/spelling_stopwords.txt

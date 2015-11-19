@@ -11,7 +11,7 @@ Makefile.PL
 MANIFEST
 META.json
 META.yml
-README
+README.pod
 t/000_load.t
 t/005_file_sysinfo.t
 t/sysinfos.public/ProxySG-4006060000--20090307-165730UTC.sysinfo
