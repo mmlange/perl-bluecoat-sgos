@@ -8,33 +8,29 @@ device.  It was formerly Net::BlueCoat::SGOS.
 L<BlueCoat::SGOS> uses well-tested and widely-used CPAN modules, so 
 installation should be as simple as:
 
-=over
-
-=item C<CPAN>
+=head2 C<CPAN>
 
     cpan BlueCoat::SGOS
 
-=item C<cpanminus>
+=head2 C<cpanminus>
     
     cpanm BlueCoat::SGOS
 
-
-=item C<most Unix platforms>
+=head2 C<most Unix platforms>
     
     perl Makefile.PL
     make
     make test
     make install
 
-
-=item C<The most portable option>
+=head2 C<The most portable option>
 
     perl Build.PL
     ./Build
     ./Build test
     ./Build install
 
-=back
+
 
 =head1 SUPPORT AND DOCUMENTATION
 
