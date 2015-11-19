@@ -45,6 +45,7 @@ WriteMakefile(
         'Readonly'             => 0
     },
     BUILD_REQUIRES => {
+        'File::Slurp'      => '9999.19',
         'TAP::Harness'     => '3.18',
         'Test::More'       => '0',
         'Test::NoWarnings' => '1.04',
