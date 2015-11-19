@@ -112,7 +112,7 @@ The following is the status of the last build as reported by Travis CI:
 
 =head1 AUTHOR
 
-Matthew Lange E<lt>mmlange@cpan.org<gt>E
+Matthew Lange E<lt>mmlange@cpan.orgE<gt>
 
 =head1 LICENSE AND COPYRIGHT
 
