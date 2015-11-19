@@ -1,11 +1,6 @@
 =head1 BlueCoat::SGOS
 
 BlueCoat::SGOS - a module to parse the configuration from a Blue Coat SGOS
-device.
-
-=head1 DESCRIPTION
-
-L<BlueCoat::SGOS> is a module to parse the sysinfo from a Blue Coat SGOS
 device.  It was formerly Net::BlueCoat::SGOS.
 
 =head1 INSTALLATION
@@ -17,34 +12,29 @@ installation should be as simple as:
 
 =item C<CPAN>
 
-    $ cpan BlueCoat::SGOS
+    cpan BlueCoat::SGOS
 
 =item C<cpanminus>
     
-    $ cpanm BlueCoat::SGOS
+    cpanm BlueCoat::SGOS
+
 
 =item C<most Unix platforms>
     
-    $ perl Makefile.PL
-    $ make
-    $ make test
-    $ make install
+    perl Makefile.PL
+    make
+    make test
+    make install
+
 
 =item C<The most portable option>
 
-    $ perl Build.PL
-    $ ./Build
-    $ ./Build test
-    $ ./Build install
+    perl Build.PL
+    ./Build
+    ./Build test
+    ./Build install
 
 =back
-
-
-
-
-
-
-
 
 =head1 SUPPORT AND DOCUMENTATION
 
@@ -55,29 +45,47 @@ perldoc command.
 
 You can also look for information at:
 
-    RT, CPAN's request tracker
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=BlueCoat-SGOS
+=over
 
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/BlueCoat-SGOS
+=item * L<RT, CPAN's request tracker|http://rt.cpan.org/NoAuth/Bugs.html?Dist=BlueCoat-SGOS>
 
-    CPAN Ratings
-        http://cpanratings.perl.org/d/BlueCoat-SGOS
+=item * L<AnnoCPAN, Annotated CPAN documentation|http://annocpan.org/dist/BlueCoat-SGOS>
 
-    Search CPAN
-        http://search.cpan.org/dist/BlueCoat-SGOS/
+=item * L<CPAN Ratings|http://cpanratings.perl.org/d/BlueCoat-SGOS>
+
+=item * L<CPAN Search|http://search.cpan.org/dist/BlueCoat-SGOS/>
+
+=back
 
 
 =head1 TODO
 
 There are many things to do:
-* Stabilize the API
-* Effectively extract the CPL and VPM-XML data
 
-** WARNING 
+=over
+
+=item * Stabilize the API
+
+=item * Effectively extract the CPL and VPM-XML data
+
+=back
+
+
+
+=head2 B<WARNING >
+
 This is currently beta-quality software.  This means:
-+ there could be bugs
-+ the API is not stable
+
+
+=over
+
+=item * there could be bugs
+
+=item * the API is not stable
+
+=back
+
+
 
 It has been tested on a handful of sysinfo files with great
 success.
@@ -90,9 +98,11 @@ and slow.
 
 =head1 SOURCE
 
-=begin html
+The source is located here: L<http://github.com/mmlange/perl-bluecoat/sgos>
 
-L<http://github.com/mmlange/perl-bluecoat/sgos>
+The following is the status of the last build as reported by Travis CI:
+
+=begin html
 
 <p>
   <img src="https://travis-ci.org/mmlange/perl-bluecoat-sgos.svg?branch=master" alt="Travis CI build status">
