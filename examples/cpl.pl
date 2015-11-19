@@ -4,7 +4,9 @@ use lib qw#../lib #;
 use Data::Dumper;
 use BlueCoat::SGOS;
 
-my $bc = BlueCoat::SGOS->new('debuglevel' => 0,);
+my $bc = BlueCoat::SGOS->new(
+	'debuglevel' => 0,
+);
 
 my $file = $ARGV[0] || '../t/sysinfos/4006060000_5.3.1.4__0.sysinfo';
 

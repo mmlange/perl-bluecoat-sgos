@@ -4,12 +4,16 @@ use lib qw#../lib #;
 use Data::Dumper;
 use BlueCoat::SGOS;
 
-my $bc = BlueCoat::SGOS->new('debuglevel' => 0,);
+my $bc = BlueCoat::SGOS->new(
+	'debuglevel' => 0,
+);
 
-my $file = $ARGV[0] || '../t/sysinfos/4006060000_5.3.1.4__0.sysinfo';
+my $file =
+	$ARGV[0] || '../t/sysinfos/ProxySG-4006060000--20090307-165730UTC.sysinfo';
 
 $bc->get_sysinfo_from_file($file);
 $bc->parse_sysinfo();
 
-print "$bc->{'appliance-name'};$bc->{'modelnumber'};$bc->{'serialnumber'};$bc->{'sgosversion'};$bc->{'sgosreleaseid'}\n";
+print
+"$bc->{'appliance-name'};$bc->{'modelnumber'};$bc->{'serialnumber'};$bc->{'sgosversion'};$bc->{'sgosreleaseid'}\n";
 

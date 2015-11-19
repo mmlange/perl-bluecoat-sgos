@@ -4,7 +4,7 @@
       "Matthew Lange <mmlange@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Build version 0.4214",
    "license" : [
       "gpl_2"
    ],
@@ -13,35 +13,46 @@
       "version" : "2"
    },
    "name" : "BlueCoat-SGOS",
-   "no_index" : {
-      "directory" : [
-         "t",
-         "inc"
-      ]
-   },
    "prereqs" : {
       "build" : {
          "requires" : {
             "TAP::Harness" : "3.18",
+            "Test::More" : "0",
             "Test::NoWarnings" : "1.04"
          }
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "Module::Build" : "0.4"
          }
       },
       "runtime" : {
          "requires" : {
+            "Crypt::OpenSSL::X509" : "1.804",
             "Date::Parse" : "0",
+            "DateTime" : "0",
+            "English" : "0",
+            "File::Map" : "0",
             "HTTP::Request" : "6.00",
-            "LWP::Protocol::https" : "0",
+            "LWP::Protocol::https" : "6.06",
             "LWP::UserAgent" : "6.00",
-            "Test::More" : "0",
-            "perl" : "5.006000"
+            "Readonly" : "0",
+            "perl" : "v5.6.0"
          }
       }
    },
+   "provides" : {
+      "BlueCoat::SGOS" : {
+         "file" : "lib/BlueCoat/SGOS.pm",
+         "version" : "1.06"
+      }
+   },
    "release_status" : "stable",
-   "version" : "1.05"
+   "resources" : {
+      "license" : [
+         "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt"
+      ]
+   },
+   "version" : "1.06",
+   "x_serialization_backend" : "JSON::PP version 2.27300"
 }

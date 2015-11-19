@@ -4,7 +4,7 @@
 #
 use strict;
 use lib qw#../lib #;
-use BlueCoat::SGOS 1.00;
+use BlueCoat::SGOS 1.04;
 use Getopt::Long;
 use Data::Dumper;
 
@@ -13,7 +13,7 @@ my %c = (
 	'applianceport'     => 8082,
 	'applianceusername' => 'admin',
 	'appliancepassword' => '',
-	'command'			=>	"exit\nsho ver",  # remember, we start out in config mode
+	'command'           => "exit\nsho ver",  # remember, we start out in config mode
 );
 
 my $d = GetOptions(
@@ -21,7 +21,7 @@ my $d = GetOptions(
 	'applianceport=i'     => \$c{'applianceport'},
 	'applianceusername=s' => \$c{'applianceusername'},
 	'appliancepassword=s' => \$c{'appliancepassword'},
-	'command=s' => \$c{'command'}
+	'command=s'           => \$c{'command'}
 );
 
 my $bc = BlueCoat::SGOS->new(
@@ -29,9 +29,10 @@ my $bc = BlueCoat::SGOS->new(
 	'applianceport'     => $c{'applianceport'},
 	'applianceuser'     => $c{'applianceusername'},
 	'appliancepassword' => $c{'appliancepassword'},
-	'debuglevel'		=>	1
+	'debuglevel'        => 1
 );
 
-$bc->send_command($c{'command'});
+my $output = $bc->send_command($c{'command'});
 
+print "$output\n";
 

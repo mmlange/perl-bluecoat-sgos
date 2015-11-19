@@ -14,7 +14,7 @@ my %c = (
 	'applianceusername' => 'admin',
 	'appliancepassword' => '',
 	'timestamp'         => time2str('%Y%m%d-%H%M%S%Z', time, 'UTC'),
-	'scriptname'		=>	$0
+	'scriptname'        => $0
 );
 
 my $d = GetOptions(
@@ -25,41 +25,46 @@ my $d = GetOptions(
 );
 
 if (
-	! ($c{'appliancehost'} && $c{'applianceport'}&& $c{'applianceusername'} && $c{'appliancepassword'} )
-) {
+	!(
+		   $c{'appliancehost'}
+		&& $c{'applianceport'}
+		&& $c{'applianceusername'}
+		&& $c{'appliancepassword'}
+	)
+	) {
 	usage();
 	die;
-}
+} ## end if (!($c{'appliancehost'...}))
 
 my $bc = BlueCoat::SGOS->new(
 	'appliancehost'     => $c{'appliancehost'},
 	'applianceport'     => $c{'applianceport'},
 	'applianceuser'     => $c{'applianceusername'},
 	'appliancepassword' => $c{'appliancepassword'},
-	'debuglevel'		=>	1
+	'debuglevel'        => 1
 );
 $bc->get_sysinfo();
+
 # Don't spend the time parsing the sysinfo file
 # when all we need is the serial number
 ($c{'appliance_serial_number'}) =
-  $bc->{'sgos_sysinfo'} =~ m/Serial number is (\d+)/;
+	$bc->{'sgos_sysinfo'} =~ m/Serial number is (\d+)/;
 if (!defined($c{'appliance_serial_number'})) {
 	$c{'appliance_serial_number'} = 'unknown';
 }
 
-$c{'filename'} = $c{'appliance_serial_number'} . '--' . $c{'timestamp'} . '.sysinfo';
+$c{'filename'} =
+	$c{'appliance_serial_number'} . '--' . $c{'timestamp'} . '.sysinfo';
 
 print "Filename=$c{'filename'} \n";
-if ($bc->{'sgos_sysinfo'} ) {
-	open (F,">$c{'filename'}");
+if ($bc->{'sgos_sysinfo'}) {
+	open(F, ">$c{'filename'}");
 	print F $bc->{'sgos_sysinfo'};
 	close F;
 }
 
-
-
 sub usage {
-print qq{$c{'scriptname'} - store a copy of a sysinfo
+	print qq{$c{'scriptname'} - store a copy of a sysinfo
 
 usage: $c{'scriptname'} [options]
     --appliancehost=hostname
@@ -76,5 +81,4 @@ usage: $c{'scriptname'} [options]
 
 };
 
-
-}
+} ## end sub usage

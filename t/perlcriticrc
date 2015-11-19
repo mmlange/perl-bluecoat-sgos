@@ -1,0 +1,52 @@
+# Matt's settings
+#
+
+# severity: Sets the default minimum severity level for Policies.  The
+# default is 5.  If defined, this should be an integer from 1 to 5,
+# where 5 is the highest severity.
+
+severity = 1
+
+[-CodeLayout::ProhibitHardTabs]
+[-CodeLayout::ProhibitParensWithBuiltins]
+[ControlStructures::ProhibitPostfixControls]
+
+
+#severity = 2
+[Documentation::PodSpelling]
+spell_command = aspell list
+stop_words_file = t/spelling_stopwords.txt
+
+[-Documentation::RequirePodAtEnd]
+
+[Documentation::RequirePodSections]
+lib_sections =  NAME | SYNOPSIS | SUBROUTINES/METHODS | DEPENDENCIES | BUGS AND LIMITATIONS | AUTHOR | LICENSE AND COPYRIGHT
+
+[InputOutput::RequireCheckedSyscalls]
+functions = :builtins
+exclude_functions = print
+
+[RegularExpressions::ProhibitComplexRegexes]
+max_characters = 100 
+
+#[-RegularExpressions::ProhibitEscapedMetacharacters]
+[-RegularExpressions::RequireLineBoundaryMatching]
+[-RegularExpressions::RequireExtendedFormatting]
+[-RegularExpressions::RequireDotMatchAnything]
+
+[Subroutines::ProhibitExcessComplexity]
+max_mccabe = 30
+
+[-Subroutines::ProhibitExplicitReturnUndef]
+
+[TestingAndDebugging::RequireUseStrict]
+
+
+#severity = 5
+
+[-TestingAndDebugging::RequireUseWarnings]
+#[-ValuesAndExpressions::ProhibitMagicNumbers]
+
+[Variables::ProhibitPunctuationVars]
+allow = $| $/
+

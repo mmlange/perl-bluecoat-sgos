@@ -3,11 +3,11 @@
 #
 #
 use strict;
-use Test::More tests => 2;
-use Test::NoWarnings;
+use BlueCoat::SGOS;
+use Test::More;
 
-BEGIN {
-	use_ok('BlueCoat::SGOS') || print "Bail out!\n";
-}
+plan tests => 1;
 
-diag("Testing BlueCoat::SGOS $BlueCoat::SGOS::VERSION, Perl $], $^X");
+note("Testing BlueCoat::SGOS $BlueCoat::SGOS::VERSION, Perl $], $^X");
+use_ok('BlueCoat::SGOS');
+
