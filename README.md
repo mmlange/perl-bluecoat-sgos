@@ -1,87 +1,57 @@
-=head1 BlueCoat::SGOS
+# BlueCoat-SGOS version 1.06
 
 BlueCoat::SGOS - a module to parse the configuration from a Blue Coat SGOS
 device.  It was formerly Net::BlueCoat::SGOS.
 
-=head1 INSTALLATION
+# INSTALLATION
 
 L<BlueCoat::SGOS> uses well-tested and widely-used CPAN modules, so 
 installation should be as simple as:
 
-=head2 C<CPAN>
+## CPAN
+    `cpan BlueCoat::SGOS`
 
-    cpan BlueCoat::SGOS
+## cpanminus
+    `cpanm BlueCoat::SGOS`
 
-=head2 C<cpanminus>
-    
-    cpanm BlueCoat::SGOS
-
-=head2 C<most Unix platforms>
-    
-    perl Makefile.PL
+## most Unix platforms
+    `perl Makefile.PL
     make
     make test
-    make install
+    make install`
 
-=head2 C<The most portable option>
-
-    perl Build.PL
+## The most portable option
+    `perl Build.PL`
     ./Build
     ./Build test
     ./Build install
 
 
 
-=head1 SUPPORT AND DOCUMENTATION
+# SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the
 perldoc command.
 
-    perldoc BlueCoat::SGOS
+    `perldoc BlueCoat::SGOS`
 
 You can also look for information at:
 
-=over
+* L<RT, CPAN's request tracker|http://rt.cpan.org/NoAuth/Bugs.html?Dist=BlueCoat-SGOS>
+* L<AnnoCPAN, Annotated CPAN documentation|http://annocpan.org/dist/BlueCoat-SGOS>
+* L<CPAN Ratings|http://cpanratings.perl.org/d/BlueCoat-SGOS>
+* L<CPAN Search|http://search.cpan.org/dist/BlueCoat-SGOS/>
 
-=item * L<RT, CPAN's request tracker|http://rt.cpan.org/NoAuth/Bugs.html?Dist=BlueCoat-SGOS>
-
-=item * L<AnnoCPAN, Annotated CPAN documentation|http://annocpan.org/dist/BlueCoat-SGOS>
-
-=item * L<CPAN Ratings|http://cpanratings.perl.org/d/BlueCoat-SGOS>
-
-=item * L<CPAN Search|http://search.cpan.org/dist/BlueCoat-SGOS/>
-
-=back
-
-
-=head1 TODO
-
+# TODO
 There are many things to do:
-
-=over
-
-=item * Stabilize the API
-
-=item * Effectively extract the CPL and VPM-XML data
-
-=back
+* Stabilize the API
+* Effectively extract the CPL and VPM-XML data
 
 
-
-=head2 B<WARNING >
-
+# WARNING
 This is currently beta-quality software.  This means:
-
-
-=over
-
-=item * there could be bugs
-
-=item * the API is not stable
-
-=back
-
-
+* there could be bugs
+* the API is not stable
 
 It has been tested on a handful of sysinfo files with great
 success.
@@ -92,26 +62,17 @@ at each "delimiter" section.  This is inefficient
 and slow.
 
 
-=head1 SOURCE
-
+# SOURCE
 The source is located here: L<http://github.com/mmlange/perl-bluecoat/sgos>
 
 The following is the status of the last build as reported by Travis CI:
+![Travis CI build status](https://travis-ci.org/mmlange/perl-bluecoat-sgos.svg?branch=master)
 
-=begin html
 
-<p>
-  <img src="https://travis-ci.org/mmlange/perl-bluecoat-sgos.svg?branch=master" alt="Travis CI build status">
-</p>
+# AUTHOR
+[Matthew Lange](mmlange@cpan.org)
 
-=end html
-
-=head1 AUTHOR
-
-Matthew Lange E<lt>mmlange@cpan.orgE<gt>
-
-=head1 LICENSE AND COPYRIGHT
-
+# LICENSE AND COPYRIGHT
 Copyright (c) 2008-2015 Matthew Lange
 
 This program is free software; you can redistribute it and/or modify it
