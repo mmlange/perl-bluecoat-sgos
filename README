@@ -24,26 +24,16 @@ and slow.
 BlueCoat::SGOS uses well-tested and widely-used CPAN modules, so 
 installation should be as simple as:
 
-### CPAN:
-```
-cpan BlueCoat::SGOS
-```
-
-### cpanminus:
-```
-cpanm BlueCoat::SGOS
-```
-
-### On most Unix platforms:
-```
+```ShellSession
 perl Makefile.PL
 make
 make test
 make install
 ```
 
-### Or the most portable option:
-```
+or, using the more portable Module::Install way:
+
+```ShellSession
 perl Build.PL
 ./Build
 ./Build test
@@ -55,7 +45,9 @@ perl Build.PL
 After installing, you can find documentation for this module with the
 perldoc command as follows:
 
-`perldoc BlueCoat::SGOS`
+```ShellSession
+perldoc BlueCoat::SGOS
+```
 
 
 You can also find more information here:
@@ -71,9 +63,9 @@ There are many things to do:
 * Effectively extract the CPL and VPM-XML data
 
 # SOURCE
-The source is located here: [http://github.com/mmlange/perl-bluecoat/sgos](http://github.com/mmlange/perl-bluecoat/sgos)
+The source is located here: [http://github.com/mmlange/perl-bluecoat/sgos](http://github.com/mmlange/perl-bluecoat/sgos).
 
-The following is the status of the last build as reported by Travis CI:
+The following is the status of the last build as reported by [Travis CI](https://travis-ci.org/mmlange/perl-bluecoat-sgos):
 
 ![Travis CI build status](https://travis-ci.org/mmlange/perl-bluecoat-sgos.svg?branch=master)
 
