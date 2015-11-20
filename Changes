@@ -96,20 +96,16 @@ Revision history for BlueCoat::SGOS
 - Squashed bug 78418: fix licensing in makefiles.
 - Changed tests to use TEST_AUTHOR environment variable.
 
-1.06    2013-04-24 19:00
+1.06    2015-11-20 20:00
 ------------------------
 - Added get_section_list and get_section methods.  The old way of retrieving
   this data via variable ( $obj->{'sgos_sysinfo_sect'}{'Hardware Information'} )
   is deprecated.  You should now use the get_section method instead, like this:
   $obj->get_section('Hardware Information')
-- Fixed copyright date.  Hello, 2013!
+- Fixed copyright date.  Hello, 2015!
 - Many author-only tests updated.  Many Perl::Critic tests added to facilitate
   better code.
-
-1.07    2014-11-29 20:00
-------------------------
 - Changed the get_sysinfo() method to get_sysinfo_from_appliance() to be more
   consistent with the other methods.
-
-
+- Moved code repository to GitHub
 
