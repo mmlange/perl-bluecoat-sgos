@@ -1,4 +1,5 @@
-BlueCoat::SGOS Perl Module
+BlueCoat::SGOS
+==============
 
 This is the BlueCoat::SGOS module.  It seeks to parse
 the configuration of a Blue Coat SGOS device.  It was
@@ -28,16 +29,6 @@ installation should be as simple as:
     ./Build test
     ./Build install
 
-If you really need a makefile, you can create one as follows:
-    perl Build.PL
-    ./Build
-    
-    and then follow the normal "make" routine:
-    perl Makefile.PL
-    make
-    make test
-    make install
-
 
 SUPPORT AND DOCUMENTATION
 
@@ -45,7 +36,6 @@ After installing, you can find documentation for this module with the
 perldoc command as follows:
 
     perldoc BlueCoat::SGOS
-
 
 You can also find more information here:
     * RT, CPAN's request tracker
@@ -56,13 +46,6 @@ You can also find more information here:
         http://cpanratings.perl.org/d/BlueCoat-SGOS
     * CPAN Search
         http://search.cpan.org/dist/BlueCoat-SGOS/
-
-TODO
-
-There are many things to do:
-    * Stabilize the API
-    * Effectively extract the CPL and VPM-XML data
-
 
 SOURCE
 The source is located here: http://github.com/mmlange/perl-bluecoat/sgos
