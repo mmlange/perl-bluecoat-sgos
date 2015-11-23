@@ -55,7 +55,7 @@ foreach my $filename (keys %testparams) {
     subtest "For $filename" => sub {
         plan tests => $subtests;
         note("Begin $filename");
-        my $bc = BlueCoat::SGOS->new('debuglevel' => 1);
+        my $bc = BlueCoat::SGOS->new('debuglevel' => 0);
 
         # test 1 - do we have an object
         ok($bc, 'have an object');
