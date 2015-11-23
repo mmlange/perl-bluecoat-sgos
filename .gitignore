@@ -8,6 +8,7 @@ Build
 Build.bat
 .last_cover_stats
 /Makefile
+/Makefile.PL
 /Makefile.old
 /MANIFEST.bak
 /META.yml

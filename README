@@ -23,17 +23,20 @@ INSTALLATION
 
 BlueCoat::SGOS uses well-tested and widely-used CPAN modules, so 
 installation should be as simple as:
-
-    perl Makefile.PL
-    make
-    make test
-    make install
-
-or, using the more portable Module::Install way:
     perl Build.PL
     ./Build
     ./Build test
     ./Build install
+
+If you really need a makefile, you can create one as follows:
+    perl Build.PL
+    ./Build
+    
+    and then follow the normal "make" routine:
+    perl Makefile.PL
+    make
+    make test
+    make install
 
 
 SUPPORT AND DOCUMENTATION

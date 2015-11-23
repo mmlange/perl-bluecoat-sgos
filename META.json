@@ -16,6 +16,8 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "File::Slurp" : "9999.19",
+            "Module::Build" : "0",
             "TAP::Harness" : "3.18",
             "Test::More" : "0",
             "Test::NoWarnings" : "1.04"
@@ -37,7 +39,7 @@
             "LWP::Protocol::https" : "6.06",
             "LWP::UserAgent" : "6.00",
             "Readonly" : "0",
-            "perl" : "v5.6.0"
+            "perl" : "v5.8.0"
          }
       }
    },
