@@ -1,3 +1,4 @@
+Build.PL
 Changes
 examples/cmd.pl
 examples/cpl.pl
@@ -7,12 +8,11 @@ examples/sections.pl
 examples/sysinfo-capture.pl
 lib/BlueCoat/SGOS.pm
 LICENSE
-Makefile.PL
 MANIFEST
 META.json
 META.yml
-README.md
 README
+README.md
 t/000_load.t
 t/005_file_sysinfo.t
 t/sysinfos/sysinfos.public/ProxySG-4006060000--20090307-165730UTC.sysinfo
