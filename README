@@ -5,6 +5,10 @@ This is the BlueCoat::SGOS module.  It seeks to parse
 the configuration of a Blue Coat SGOS device.  It was
 formerly Net::BlueCoat::SGOS.
 
+Current build status:
+[![Build Status](https://travis-ci.org/mmlange/perl-bluecoat-sgos.svg?branch=master)](https://travis-ci.org/mmlange/perl-bluecoat-sgos)
+
+
 
 **WARNING**
 This is currently beta-quality software.  This means:
